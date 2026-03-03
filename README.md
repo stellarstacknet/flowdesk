@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FlowDesk
+
+B2B SaaS 팀 생산성 플랫폼의 랜딩페이지입니다.
+
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?logo=tailwindcss)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+## Preview
+
+> 배포 URL은 Vercel 배포 완료 후 업데이트 예정
+
+## Tech Stack
+
+| 기술 | 용도 |
+|------|------|
+| **Next.js 16** (App Router) | SSG 정적 생성, 라우팅 |
+| **Tailwind CSS v4** | 유틸리티 기반 스타일링 |
+| **shadcn/ui** | UI 컴포넌트 (Button, Card, Badge, Separator) |
+| **Framer Motion** | 스크롤 기반 애니메이션 |
+| **Lucide React** | 아이콘 |
+| **TypeScript** | 타입 안전성 |
+
+## Sections
+
+| # | 섹션 | 설명 |
+|---|------|------|
+| 1 | Navbar | 반응형 sticky 네비게이션, 모바일 햄버거 메뉴 |
+| 2 | Hero | 히어로 헤드라인 + CTA + 미니 칸반보드 데모 |
+| 3 | Logo Cloud | 가상 고객사 SVG 워드마크 로고 6종 |
+| 4 | Features | 2x2 그리드 주요 기능 카드 |
+| 5 | How It Works | 3단계 사용 방법 안내 |
+| 6 | Pricing | 3단 요금제 비교 카드 |
+| 7 | Testimonials | 고객 후기 3건 |
+| 8 | CTA | 최종 전환 유도 섹션 |
+| 9 | Footer | 4컬럼 링크 + 소셜 아이콘 |
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000) 에서 확인할 수 있습니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── globals.css          # Tailwind v4 테마 + 커스텀 유틸리티
+│   ├── layout.tsx           # 루트 레이아웃 (Outfit + Noto Sans KR)
+│   └── page.tsx             # 메인 페이지 (섹션 조합)
+├── components/
+│   ├── sections/            # 9개 랜딩페이지 섹션
+│   └── ui/                  # shadcn/ui 컴포넌트
+└── lib/
+    ├── animations.ts        # Framer Motion 프리셋
+    └── utils.ts             # cn() 유틸리티
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License - 자세한 내용은 [LICENSE](LICENSE) 파일을 참고하세요.
