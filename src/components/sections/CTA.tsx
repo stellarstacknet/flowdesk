@@ -11,7 +11,7 @@ export function CTA() {
       {/* Testimonials → CTA 상단 그라디언트 전환 */}
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-slate-50 to-transparent"
+        className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-slate-50 via-transparent to-transparent"
       />
 
       {/* 배경 gradient orb 장식 */}
@@ -62,7 +62,7 @@ export function CTA() {
       {/* CTA → Footer 하단 그라디언트 전환 */}
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-white"
+        className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent via-transparent to-white"
       />
     </section>
   );
