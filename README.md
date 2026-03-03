@@ -7,9 +7,9 @@ B2B SaaS 팀 생산성 플랫폼의 랜딩페이지입니다.
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## Preview
+## Live Demo
 
-> 배포 URL은 Vercel 배포 완료 후 업데이트 예정
+[flowdesk.stellarstack.net](https://flowdesk.stellarstack.net)
 
 ## Tech Stack
 
@@ -17,7 +17,7 @@ B2B SaaS 팀 생산성 플랫폼의 랜딩페이지입니다.
 |------|------|
 | **Next.js 16** (App Router) | SSG 정적 생성, 라우팅 |
 | **Tailwind CSS v4** | 유틸리티 기반 스타일링 |
-| **shadcn/ui** | UI 컴포넌트 (Button, Card, Badge, Separator) |
+| **shadcn/ui** | UI 컴포넌트 (Button, Badge, Separator) |
 | **Framer Motion** | 스크롤 기반 애니메이션 |
 | **Lucide React** | 아이콘 |
 | **TypeScript** | 타입 안전성 |
@@ -35,6 +35,15 @@ B2B SaaS 팀 생산성 플랫폼의 랜딩페이지입니다.
 | 7 | Testimonials | 고객 후기 3건 |
 | 8 | CTA | 최종 전환 유도 섹션 |
 | 9 | Footer | 4컬럼 링크 + 소셜 아이콘 |
+
+## Features
+
+- 모바일 퍼스트 반응형 디자인 (375px~)
+- Framer Motion `whileInView` 스크롤 애니메이션
+- 접근성: skip-to-content, aria-label, focus-visible
+- 한국어 완전 로컬라이제이션
+- Open Graph 메타데이터
+- Vercel 자동 배포 (CI/CD)
 
 ## Getting Started
 

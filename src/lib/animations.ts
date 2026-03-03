@@ -55,38 +55,6 @@ export const staggerContainer: Variants = {
   },
 };
 
-/* 좌측에서 슬라이드 인 */
-export const slideInLeft: Variants = {
-  hidden: {
-    opacity: 0,
-    x: -30,
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.6,
-      ease: [0.25, 0.46, 0.45, 0.94],
-    },
-  },
-};
-
-/* 스케일 업 — 살짝 작은 상태에서 원래 크기로 */
-export const scaleIn: Variants = {
-  hidden: {
-    opacity: 0,
-    scale: 0.95,
-  },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  },
-};
-
 /* whileInView에 전달할 공통 viewport 설정 */
 export const viewportConfig = {
   once: true,
