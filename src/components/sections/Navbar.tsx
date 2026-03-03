@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -14,11 +14,22 @@ const NAV_LINKS = [
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <nav
       aria-label="메인 내비게이션"
-      className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-md"
+      className={`sticky top-0 z-50 transition-colors duration-300 ${
+        scrolled
+          ? "border-b border-white/10 bg-slate-950/80 backdrop-blur-md"
+          : "bg-transparent"
+      }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* 로고 */}
