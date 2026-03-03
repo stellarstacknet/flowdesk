@@ -60,7 +60,7 @@ export function Testimonials() {
           {TESTIMONIALS.map((testimonial) => (
             <motion.div
               key={testimonial.name}
-              className="flex flex-col rounded-2xl border border-slate-200 bg-white p-8"
+              className="flex flex-col rounded-2xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               variants={fadeInUp}
             >
               {/* 큰 따옴표 장식 */}

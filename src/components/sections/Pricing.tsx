@@ -80,7 +80,7 @@ export function Pricing() {
           {PLANS.map((plan) => (
             <motion.div
               key={plan.name}
-              className={`relative flex flex-col rounded-2xl border p-8 ${
+              className={`relative flex flex-col rounded-2xl border p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
                 plan.highlighted
                   ? "border-blue-600 ring-2 ring-blue-600 shadow-xl lg:scale-105"
                   : "border-slate-200"

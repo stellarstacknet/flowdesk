@@ -62,7 +62,7 @@ export function Hero() {
         >
           <Button
             size="lg"
-            className="gap-2 bg-blue-600 px-8 text-base ring-offset-slate-950 hover:bg-blue-700"
+            className="btn-glow gap-2 bg-blue-600 px-8 text-base ring-offset-slate-950 hover:bg-blue-700"
           >
             무료 체험 시작하기
             <ArrowRight className="size-4" />

@@ -81,9 +81,10 @@ export function Footer() {
                   <li key={link}>
                     <a
                       href="#"
-                      className="text-sm text-slate-500 transition-colors hover:text-slate-900"
+                      className="group/link relative inline-block text-sm text-slate-500 transition-colors hover:text-slate-900"
                     >
                       {link}
+                      <span className="absolute inset-x-0 -bottom-0.5 h-px origin-left scale-x-0 bg-slate-900 transition-transform duration-300 group-hover/link:scale-x-100" />
                     </a>
                   </li>
                 ))}
