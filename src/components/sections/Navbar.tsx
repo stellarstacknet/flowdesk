@@ -25,7 +25,7 @@ export function Navbar() {
   return (
     <nav
       aria-label="메인 내비게이션"
-      className={`sticky top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled ? "bg-slate-950/30 backdrop-blur-sm" : "bg-transparent"
       }`}
     >

@@ -21,7 +21,7 @@ export function Hero() {
       />
 
       <motion.div
-        className="relative mx-auto max-w-7xl px-4 pb-32 pt-24 text-center sm:px-6 sm:pt-32 md:pb-40 md:pt-40 lg:px-8"
+        className="relative mx-auto max-w-7xl px-4 pb-32 pt-40 text-center sm:px-6 sm:pt-48 md:pb-40 md:pt-56 lg:px-8"
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
