@@ -21,7 +21,7 @@ export function Hero() {
       />
 
       <motion.div
-        className="relative mx-auto max-w-7xl px-4 pb-32 pt-40 text-center sm:px-6 sm:pt-48 md:pb-40 md:pt-56 lg:px-8"
+        className="relative mx-auto max-w-7xl px-4 pb-20 pt-40 text-center sm:px-6 sm:pt-48 md:pb-28 md:pt-56 lg:px-8"
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
@@ -151,12 +151,6 @@ export function Hero() {
           </div>
         </motion.div>
       </motion.div>
-
-      {/* Hero → LogoCloud 그라디언트 전환 */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent via-transparent to-slate-50"
-      />
     </section>
   );
 }

@@ -8,12 +8,6 @@ import { fadeInUp, staggerContainer, viewportConfig } from "@/lib/animations";
 export function CTA() {
   return (
     <section className="relative overflow-hidden bg-slate-950 section-padding">
-      {/* Testimonials → CTA 상단 그라디언트 전환 */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-slate-50 via-transparent to-transparent"
-      />
-
       {/* 배경 gradient orb 장식 */}
       <div
         aria-hidden="true"
@@ -58,12 +52,6 @@ export function CTA() {
           </Button>
         </motion.div>
       </motion.div>
-
-      {/* CTA → Footer 하단 그라디언트 전환 */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent via-transparent to-white"
-      />
     </section>
   );
 }
